@@ -1,0 +1,43 @@
+{
+  "Academy/Certifications": {
+    "The customer has completed all exercises, but they are still not passing": {
+      "resources":{
+        "How to troubleshoot the Learning Center using Amplitude?":"https://wiki.hubspotcentral.net/pages/viewpage.action?pageId=136579391"
+      },
+      "steps":"Link to Diagnostic Tool:  including email of the user and track name\nUser ID:  You can find this in the FCC tool\nLink to Amplitude:\nScreenshots where we can see the event:\nTrack name:\nConfirmation that the event has been completed more than 24 hrs ago:"
+    }
+  },
+  "Activity Feed": {
+    "General Activity Feed Issues": {
+      "steps":"User's email address:\nSupport toolbox link:\nScreenshoot of what the user is seeing in the Activity Feed:"
+    }
+  },
+  "Ads": {
+    "Lead Syncing Issues": {
+      "resources": {
+        "Troubleshooting LinkedIn lead syncing":"https://knowledge.hubspot.com/ads/manage-linkedin-ads-accounts-syncing-leads-to-hubspot",
+        "Troubleshooting Facebook lead syncing":"https://knowledge.hubspot.com/ads/manage-facebook-pages-syncing-leads-to-hubspot"
+      },
+      "steps":"Link to customer's Lead Syncing settings (confirmation that they have Lead Syncing turned on):\nIf customer is unable to turn on Lead Syncing, then include:\n-Screenshots confirming that the connected user has the required permission for the page\n-Screenshots confirming any other page setup requirements outlined in the KB\n-Confirmation that the customer has completed the troubleshooting steps outlined in the KB\nIf Lead Syncing is already turned on, but the customer isn't seeing/is missing leads, then include:\n-A link to the ad campaign in question\n-An exported CSV of leads from Facebook/LinkedIn"
+    },
+    "Contact Attribution Issues": {
+      "resources": {
+        "How Ads attribution reports work in HubSpot":"https://knowledge.hubspot.com/ads/ads-attribution-in-hubspot",
+        "Tracking template:":"https://knowledge.hubspot.com/articles/kcs_article/reports/how-does-tracking-work-in-the-ads-add-on"
+      },
+      "steps":"A link to the contact(s) in question:\nConfirmation that the URL the contact landed on after clicking an ad that contains our entire tracking template:\nDoes the contact have an Ads event on their timeline?\nHave you confirmed you're looking at the correct ad campaign and date range?\nHave you confirmed you're looking at the correct attribution report?"
+    },
+    "Ad Account Connection Issues": {
+      "resources": {
+        "How to connect LinkedIn Ads accounts":"https://knowledge.hubspot.com/ads/connect-your-linkedin-ads-account-to-hubspot",
+        "How to connect Facebook Ads accounts":"https://knowledge.hubspot.com/ads/connect-your-facebook-ads-account-to-hubspot",
+        "How to connect Google Ads accounts":"https://knowledge.hubspot.com/ads/connect-your-google-ads-account-to-hubspot"
+      },
+      "steps": "Name of ad account in question:\nName of user who's attempting to connect:\nScreenshots confirming that the user has the required permissions in their ad account:\nDescription of the specific behavior that's preventing them from connecting:\nIf an error message pops up in HubSpot, also include a HAR file collected while reproducing the error"
+    },
+    "[TASK] 'Sorry. There are too many ad accounts to show right now' error": {
+      "description":"This error will show for users who have access to a large amount of ad accounts - our system will eventually timeout and we won't be able to display all of them, but we can manually connect the ad account for the customer if you file a Task JIRA.",
+      "steps":"ID of account(s) user is attempting to connect:\nScreenshot of error:\nScreenshot confirming the user's admin permission for account(s) in question:"
+    }
+  }
+}
