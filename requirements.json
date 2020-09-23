@@ -91,6 +91,82 @@
         "Supporting Conversations":"https://wiki.hubspotcentral.net/display/Support/Supporting+Conversations"
       },
       "steps":"Portal ID:\nUser's email address:\nThread Id URL: When viewing relevant conversation, this can be located within the URL, i.e. app.hubspot.com/live-messages/portalId/inbox/ threadId\nEvent Id from error message: If there is a red error at the top of the screen when trying to complete a message, it will contain an Event Id. Copy & paste this.\nBot Id: Link to the Bot editor for the bot in question, i.e. app.hubspot.com/bots/portalId/bot/botId\nContact record of visitor: if available Linked in right hand side bar of conversation\n"
-    }  
+    }
+  },
+  "COS Email": {
+    "Generic Content Issue": {
+      "steps":"Expected behavior:\nCurrent behavior:\nIn-app HubSpot link to content in question:\nLive example link:\nLink in your test portal or the customer portal to your cloned version for testing:\n"
+    }
+  },
+  "COS Platform": {
+    "Generic Content Issue": {
+      "steps":"Expected behavior:\nCurrent behavior:\nIn-app HubSpot link to content in question:\nLive example link:\nLink in your test portal or the customer portal to your cloned version for testing:\n"
+    }
+  },
+  "COSCTA": {
+    "Generic Content Issue": {
+      "steps":"Expected behavior:\nCurrent behavior:\nIn-app HubSpot link to content in question:\nLive example link:\nLink in your test portal or the customer portal to your cloned version for testing:\n"
+    }
+  },
+  "CRM": {
+    "Issues Loading CRM Record(s)": {
+      "resources":{
+        "Speed Test":"https://www.speedtest.net/"
+      }
+      "steps":"Are you able to reproduce this issue?\nIs this issue occurring consistently for your customer, or does it only occur sporadically?\nDoes this issue crop up for the customer in only a single browser, or Is the customer able to reproduce this issue across multiple browsers? Which browser is the customer using when they see this issue occur?\nWhat version of the browser is the customer running? Is this the most up-to-date version?\nDoes the customer see this issue if the access the tool in an incognito browser window? Does it occur after they’ve cleared their browser cache?\nDoes the customer have any extensions running on their browser? If so, does the issue continue to occur after they’ve disabled those extensions?\nWhat is the operating system of the device where this issue is occurring? What is that operating system’s version?\nDoes this issue occur only on the customer’s computer or device? Are they able to reproduce this issue if they log into their portal on one of their colleague’s computers? Conversely, if a colleague logs into their portal on the customer’s computer, are they able to replicate the loading issue that the customer is seeing? If it’s only occurring on their computer, what’s the hardware installed on their device?\nAre the customer’s internet speeds up to par? This can be assessed by running a speed test.\n"
+    },
+    "[TASK] Request to Force Delete List(s)": {
+      "steps":"Screenshot showing the customer's request to delete the lists:\nConfirmation that the lists are not being used in other areas of the portal:\nInclude the exact List IDs of the lists they want deleted: You can locate the list ID within the URL, for example: https://app.hubspot.com/contacts/XXXXXXX/lists/48 would have a List ID of 48.\n",
+      "notes":"We cannot delete blog subscription lists that are linked to published, active blogs without adversely affecting that blog's subscription settings. As such, if the customer wants to delete the subscription lists associated with their blogs, they would need to delete the blog in its entirety, which should automatically delete the associated subscription lists as well."
+    }
+  },
+  "Design Support": {
+    "Generic Content Issue": {
+      "steps":"Expected behavior:\nCurrent behavior:\nIn-app HubSpot link to content in question:\nLive example link:\nLink in your test portal or the customer portal to your cloned version for testing:\n"
+    }
+  },
+  "Email Deliverability": {
+    "[TASK] Unbounce unknown users":{
+      "resources":{
+        "Email Support FAQ":"https://wiki.hubspotcentral.net/display/Support/Email+Support+FAQ"
+      },
+      "steps":"Portal ID:\nReason for unbounce:\nSteps customer has taken to resolve bounce reason:\nLink to a list in the portal including the contacts to unbounce:\nAttach (if the contacts to unbounce are not internal contacts): Screenshots or supporting files that the contacts to unbounce currently exist and want to receive email\n"
+    },
+    "[TASK] Unquarantine OR Unsuspend": {
+      "resources":{
+        "Deliverability Alerts - What to Look for and What to Do":"https://wiki.hubspotcentral.net/display/emaildeliverability/Deliverability+Alerts+-+What+to+look+for%2C+and+what+to+do",
+        "Email Suspension Appeals Troubleshooting Guide (Suspension Appeals only)":"https://wiki.hubspotcentral.net/display/emaildeliverability/Email+Suspension+Appeals+Troubleshooting+Guide",
+        "Supporting Starter, Trial and Free Marketing Email Suspensions":"https://wiki.hubspotcentral.net/display/emaildeliverability/Supporting+Starter%2C+Trial+and+Free+Marketing+Email+Suspensions"
+      },
+      "steps":"Portal ID:\nLink to original quarantined list(s) (Not applicable for suspensions):\nDo they have Consent/opt-in from contacts?\nHas the customer explained how these contacts were opted in? (Y or N)\nIf so please choose the option that best describes the customer's explanation of opt-in:\n - These contacts have opted in to hear from their organization (Customer claims this is true, and you believe them)\n - These contacts have opted in to hear from their organization (Proof in the portal, ie. form submissions)\n - Contacts are customers and therefore have implied consent\n - Contacts are partners and therefore have implied consent\n - Contacts are free users and therefore have implied consent\n - Another organization provided this list and assured it had \"opt-in\"\nEstimated number of contacts removed:\nExplain what type of contacts were removed:\nHow were the lists cleaned? (optional for data collection)\n - Validated contacts\n - Opted out contacts\n - Deleted contacts\n - Other (explain)\nLink to cleaned up list(s) to unquarantine (Not applicable for suspensions):\nAttach original results file from list cleaning tool if available.\n"
+    }
+  },
+  "Forms": {
+    "resources": {
+      "How to troubleshoot HubSpot Forms":"https://wiki.hubspotcentral.net/display/Support/How+to+troubleshoot+HubSpot+Forms"
+    },
+    "steps":"A link to the form within the editor:\nA link to a live page with the form: only needed if the issue is based on a form on a page\nAn example contact who has seen an issue: if the issue is based on a submission\nLinks to the form submissions endpoints: if the issue is submission based. This endpoint is explained in the above wiki under the 'How to analyze a form submission' section.\nInclude context with your JIRA description: If there is an issue, why is it an issue and what is expected? Please do not copy and paste information from slack or a support ticket, copy and pasted answers are often provided out of context and mean follow up questions can't be answered.\n"
+  },
+  "Integrations": {
+    "[TASK] Delete Salesforce Properties": {
+      "steps":"A list of the internal values of the property(ies) the customer would like deleted\nIf the request is to delete all Salesforce properties, please specify if you want the ‘Salesforce Information’ property group(s) deleted\nCheck 1: Are these properties used by any contacts/companies/lists/workflows? If yes, please provide a screenshot of the customer confirming they are still OK with us removing the properties as it will impact these assets.\nCheck 2: Does the customer have the SF integration uninstalled? We can only delete Salesforce Properties if the customer has uninstalled the integration completely.\n"
+    },
+    "Other Salesforce Issues": {
+      "steps":"Link to Salesforce Settings:\nWhat you expected to happen:\nWhat is actually happening:\nIs there a vague error message when attempting to Integrate? Please collect a HAR file\nSF records did not sync over to HubSpot?\nProvide the Salesforce IDs of some sample records. The IDs allow us to query the Salesforce API to see the full records and investigate further. The customer can find these IDs by navigating to the applicable records in Salesforce and copying the 15-18 character alphanumeric string at the end of the URL.\n"
+    },
+    "General Integrations":{
+      "steps":"Name of the Integration:\nLink to the Integration's Settings Page:\nDescription of what you expected to happen:\nDescription of what is actually happening:\nLink(s) to an example record showing the behavior:\nIs there a vague error message when attempting to Integrate? Please provide a HAR file:\n"
+    },
+    "Trouble with the WordPress plugin":{
+      "resources":{
+        "WordPress Plugin Support Troubleshooting":"https://wiki.hubspotcentral.net/display/PM/WordPress+Plugin+Support+Troubleshooting",
+        "PHP Most up to date Version":"https://www.php.net/supported-versions.php",
+        "Wordpress Most up to daate Version":"https://codex.wordpress.org/Supported_Versions",
+        "Browser Console Logs":"https://support.shortpoint.com/support/solutions/articles/1000222881-save-google-chrome-browser-s-console-file",
+        "Browser Network Logs":"https://confluence.atlassian.com/kb/generating-har-files-and-analyzing-web-requests-720420612.html"
+      },
+      "steps":"PHP version: Check what the most up to date version is - please ensure they are using the most up to date version\nWordPress version: Check what the most up to date version is here - please ensure they are using the most up to date version\nList of plugins (with versions) that the customer has on their browser: A screenshot of the plugins page is OK\nA recording illustrating the issue:\n",
+      "notes":"We might ask you to provide us with the browser's console logs and browser's network logs."
+    }
   }
 }
