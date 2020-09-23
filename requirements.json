@@ -112,7 +112,7 @@
     "Issues Loading CRM Record(s)": {
       "resources":{
         "Speed Test":"https://www.speedtest.net/"
-      }
+      },
       "steps":"Are you able to reproduce this issue?\nIs this issue occurring consistently for your customer, or does it only occur sporadically?\nDoes this issue crop up for the customer in only a single browser, or Is the customer able to reproduce this issue across multiple browsers? Which browser is the customer using when they see this issue occur?\nWhat version of the browser is the customer running? Is this the most up-to-date version?\nDoes the customer see this issue if the access the tool in an incognito browser window? Does it occur after they’ve cleared their browser cache?\nDoes the customer have any extensions running on their browser? If so, does the issue continue to occur after they’ve disabled those extensions?\nWhat is the operating system of the device where this issue is occurring? What is that operating system’s version?\nDoes this issue occur only on the customer’s computer or device? Are they able to reproduce this issue if they log into their portal on one of their colleague’s computers? Conversely, if a colleague logs into their portal on the customer’s computer, are they able to replicate the loading issue that the customer is seeing? If it’s only occurring on their computer, what’s the hardware installed on their device?\nAre the customer’s internet speeds up to par? This can be assessed by running a speed test.\n"
     },
     "[TASK] Request to Force Delete List(s)": {
