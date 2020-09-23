@@ -55,7 +55,7 @@
         "Register Number Help Form":"https://wiki.hubspotcentral.net/pages/viewpage.action?pageId=245031085#WhatareRegisterPhoneNumberTickets?-FilingaTaskJIRA",
         "Troubleshooting Calling: Phone Number Registration":"https://wiki.hubspotcentral.net/display/Support/Troubleshooting+Calling%3A+Phone+Number+Registration"
       },
-      "steps":"Portal ID:\nUser's Support Toolbox:\nHS User ID: Available in Support Toolbox User section for each user\nPhone number: Include country code. (If coming from an auto created ticket, simply copy paste the ticket contents)\n,
+      "steps":"Portal ID:\nUser's Support Toolbox:\nHS User ID: Available in Support Toolbox User section for each user\nPhone number: Include country code. (If coming from an auto created ticket, simply copy paste the ticket contents)\n",
       "notes":" If the user needs another number registered after the JIRA is closed...\nTo ensure all registration requests are completed as quickly as possible, best practice is to open a new JIRA for every new registration ticket. That way if the PE who triaged that original one is unavailable it can be quickly picked up as a new task without delay."
     },
     "Call Issues":{
