@@ -39,5 +39,58 @@
       "description":"This error will show for users who have access to a large amount of ad accounts - our system will eventually timeout and we won't be able to display all of them, but we can manually connect the ad account for the customer if you file a Task JIRA.",
       "steps":"ID of account(s) user is attempting to connect:\nScreenshot of error:\nScreenshot confirming the user's admin permission for account(s) in question:"
     }
+  },
+  "APIs": {
+    "All API-Related JIRAs": {
+      "resources": {
+        "How to Effectively File an API Jira":"https://wiki.hubspotcentral.net/display/Support/How+to+Effectively+File+an+API+Jira"
+      },
+      "steps":"The endpoint they're using:\n - This includes the request method, the endpoint URL, and any query parameters. For example:\n   GET https://api.hubapi.com/contacts/v1/lists/all/contacts/all?count=100&offset=123456\nOutline the customer’s goals using that API*\n - Ideally, this will be relatively detailed (e.g. what objects they have in their external system that they want to emulate, why they’re storing data in a certain way). It is possible that the best solution is a completely different API and we won’t be able to identify those opportunities without this context.\nThe raw request being made to the HubSpot API:\n - This includes the request headers, and the full request body (if any). For example:\n   Headers: “Content-Type: application/json” Body: “{“vids”:[12345],“list_id”:“12345”}“\nThe error they received from HubSpot (if any):\n - Wherever possible, include the full error message received from HubSpot. This includes both the status code and full error body. For example:\n   Status code: 400 Response: {“status”:“error”,“message”:“Invalid input JSON on line 1, column 15”,“correlationId”:“xxx”,“requestId”:“xxx”}\n\n\nUnless we've already taken a look at the above info and explicitly ask, we do NOT want the following:\nThe code they wrote to make the request.\n - This is rarely helpful, and often confusing (e.g. none of us know PHP). Most of the HubSpot APIs accept JSON; this is a well documented, universal data format that we can evaluate for errors. Check out an example of a less-than-helpful code inclusion here.\nThe error logs from their own software/server/etc.\n - The logic here is essentially the same as the above; we're not familiar with every single programming language / hosting solution / server software in the world, and can't always deduce what's going on from someone's server logs. Check out an example of a less-than-helpful error log inclusion here.\nHapikeys/OAuth tokens/client secrets/etc.\n - This is a big one; we should  avoid  including any sensitive authentication information in jira wherever possible. It's even more important that your customer(s) avoid posting their authentication details anywhere public, especially the HubSpot Developer Forum."
+    }
+  },
+  "Calling": {
+    "[TASK] Phone Number Registration": {
+      "description":"Use for all tickets created via the Register Number Help Form.",
+      "resources": {
+        "Register Number Help Form":"https://wiki.hubspotcentral.net/pages/viewpage.action?pageId=245031085#WhatareRegisterPhoneNumberTickets?-FilingaTaskJIRA",
+        "Troubleshooting Calling: Phone Number Registration":"https://wiki.hubspotcentral.net/display/Support/Troubleshooting+Calling%3A+Phone+Number+Registration"
+      },
+      "steps":"Portal ID:\nUser's Support Toolbox:\nHS User ID: Available in Support Toolbox User section for each user\nPhone number: Include country code. (If coming from an auto created ticket, simply copy paste the ticket contents)\n,
+      "notes":" If the user needs another number registered after the JIRA is closed...\nTo ensure all registration requests are completed as quickly as possible, best practice is to open a new JIRA for every new registration ticket. That way if the PE who triaged that original one is unavailable it can be quickly picked up as a new task without delay."
+    },
+    "Call Issues":{
+      "resources": {
+        "Troubleshooting Calling: Call Quality Issues":"https://wiki.hubspotcentral.net/display/Support/Troubleshooting+Calling%3A+Call+Quality+Issues"
+      },
+      "steps":"HubId:\nUser email:\nTwilio subaccount ID: Available in Support Toolbox Calling section\nDescription of the issue:\nIs the issue with Call from browser, Call from phone, or both?\nPhone number:\nPhone device type: Mobile, desk, soft phone, etc.\nPhone carrier: AT&T, Grasshopper, Orange, etc.\nSpeed test results screenshot:\nDoes the issue persist in an incognito window?\nDoes the issue persist in other browsers?\nTwilio test results screenshot: Only Voice tests, not Video.\nLinks to contacts and example call(s) (please provide date and time of call): Must start with at least 1 call and be willing to provide more if necessary\nConsole log file from example call:\nHAR file from example call:\nConsent to voice trace?\n"
+    },
+    "Recording Issues":{
+      "resources":{
+        "Troubleshooting Calling: Recordings":"https://wiki.hubspotcentral.net/display/Support/Troubleshooting+Calling%3A+Recordings"
+      },
+      "steps":"If after working through all of the Troubleshooting Requirements in the article above, it appears there is a bug with the call engagement or recording logs, you can file a JIRA according to the details in troubleshooting guide above. There are no formal templates for these JIRAs as they are not regular Task or Help JIRAs, but would be indicative of a Bug in the product."
+    }
+  },
+  "Conversations": {
+    "Live Chat": {
+      "resources": {
+        "Supporting Conversations":"https://wiki.hubspotcentral.net/display/Support/Supporting+Conversations"
+      },
+      "steps":"Portal ID:\nUser's email address:\nThread Id URL: When viewing relevant conversation, this can be located within the URL, i.e. app.hubspot.com/live-messages/portalId/inbox/threadId\nEvent Id from error message: If there is a red error at the top of the screen when trying to complete a message, it will contain an Event Id. Copy & paste this.\nLink to targeted message: You may have to ask the user and verify. A good place to start is the URL the chat started on and the welcome message, so you can compare those to the settings of enabled messages in that portal.\n"
+    },
+    "Email": {
+      "resources": {
+        "Supporting Conversations":"https://wiki.hubspotcentral.net/display/Support/Supporting+Conversations",
+        "Support Toolbox":"https://tools.hubteam.com/support-toolbox/inboxes",
+        "Trace an email with its full headers":"https://support.google.com/mail/answer/29436?hl=en&visit_id=637364568832154658-2542559125&rd=1"
+      },
+      "steps":"Portal ID:\nUser's email address:\nThread Id URL: When viewing relevant conversation, this can be located within the URL, i.e. app.hubspot.com/live-messages/portalId/inbox/ threadId\nEvent Id from error message: If there is a red error at the top of the screen when trying to complete a message, it will contain an Event Id. Copy & paste this.\nLink to email channel settings: Check the email address the conversation was sent TO and compare it with channel settings\nLink to Support Toolbox for email: Search for the email in the Support Toolbox, find the relevant one (Shared checkmark present, correct portal), click the HS USER value to go to the relevant user dashboard\nMessage ID & headers from email client: Just like you do for Sales email issues. Be sure to grab headers from the email in the inbox of original recipient. The article \"Trace an email with its full headers\" walks through details for Gmail and other clients.\n"
+    },
+    "Chatflows (Bots)": {
+      "resources": {
+        "Supporting Conversations":"https://wiki.hubspotcentral.net/display/Support/Supporting+Conversations"
+      },
+      "steps":"Portal ID:\nUser's email address:\nThread Id URL: When viewing relevant conversation, this can be located within the URL, i.e. app.hubspot.com/live-messages/portalId/inbox/ threadId\nEvent Id from error message: If there is a red error at the top of the screen when trying to complete a message, it will contain an Event Id. Copy & paste this.\nBot Id: Link to the Bot editor for the bot in question, i.e. app.hubspot.com/bots/portalId/bot/botId\nContact record of visitor: if available Linked in right hand side bar of conversation\n"
+    }  
   }
 }
