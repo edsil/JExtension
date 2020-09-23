@@ -147,7 +147,7 @@
     },
     "steps":"A link to the form within the editor:\nA link to a live page with the form: only needed if the issue is based on a form on a page\nAn example contact who has seen an issue: if the issue is based on a submission\nLinks to the form submissions endpoints: if the issue is submission based. This endpoint is explained in the above wiki under the 'How to analyze a form submission' section.\nInclude context with your JIRA description: If there is an issue, why is it an issue and what is expected? Please do not copy and paste information from slack or a support ticket, copy and pasted answers are often provided out of context and mean follow up questions can't be answered.\n"
   },
-  "Integrations": {
+  "General Integrations": {
     "[TASK] Delete Salesforce Properties": {
       "steps":"A list of the internal values of the property(ies) the customer would like deleted\nIf the request is to delete all Salesforce properties, please specify if you want the ‘Salesforce Information’ property group(s) deleted\nCheck 1: Are these properties used by any contacts/companies/lists/workflows? If yes, please provide a screenshot of the customer confirming they are still OK with us removing the properties as it will impact these assets.\nCheck 2: Does the customer have the SF integration uninstalled? We can only delete Salesforce Properties if the customer has uninstalled the integration completely.\n"
     },
