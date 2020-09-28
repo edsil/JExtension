@@ -94,8 +94,18 @@
     }
   },
   "COS Email": {
-    "Generic Content Issue": {
-      "steps":"Expected behavior:\nCurrent behavior:\nIn-app HubSpot link to content in question:\nLive example link:\nLink in your test portal or the customer portal to your cloned version for testing:\n"
+    "Marketing email not rendering as expected": {
+      "resources":{
+        "Marketing emails look different in Outlook":"https://knowledge.hubspot.com/articles/kcs_article/email/why-do-emails-look-different-in-outlook",
+        "Why are margins and padding around my image not rendering in Outlook?":"https://knowledge.hubspot.com/articles/KCS_Article/Email/Why-are-margins-and-padding-around-my-image-not-rendering-in-Outlook",
+        "Adjust the line spacing in an email":"https://knowledge.hubspot.com/articles/kcs_article/email/how-do-i-adjust-the-line-spacing-in-an-email",
+        "Optimize your email for mobile devices":"https://knowledge.hubspot.com/articles/kcs_article/email/how-can-i-optimize-my-email-for-mobile-devices",
+        "Common email design questions and best practices":"https://knowledge.hubspot.com/email-user-guide-v2/common-email-design-questions-and-best-practices",
+        "General email design tips":"https://knowledge.hubspot.com/articles/KCS_Article/Email/HubSpot-Email-Tool-Best-Practices",
+        "See what is CSS supported on various email clients":"https://www.campaignmonitor.com/css/link-element/link-in-head/"
+      },
+      "steps":"Explanation of how the customer is expecting the email to look (screenshots can be gold here!):\nA link to the email in the email editor:\nIf the email was created in Classic email editor, a link to the email template:\nWhat Browser(s) is the customer seeing this issue on: i.e Chrome, Safari, etc.\nWhat Operating system and version is the customer using: i.e. Windows 7 64-bit, macOS High Sierra 10.13.3, etc.\nIf the user is experiencing this on Desktop or Webmail, what specific email clients are they seeing this on: i.e. Outlook 2016, Outlook for Mac, Outlook.com, etc.\nIf you are referring to a mobile device, there are several mobile versions for email clients, include the relevant versions: i.e Gmail Android app, Gmail Android app IMAP, etc.\n",
+      "notes":"Please note that if you have an issue with certain clients not rendering on the <a href=\"https://knowledge.hubspot.com/articles/kcs_article/email/create-and-send-marketing-emails\"\\target=\"_blank\"> Email Client feature</a>, check the <a href=\"https://status.litmus.com/\"\\target=\"_blank\"> status page for Litmus</a> to see if they are encountering an issue. We use Litmus to generate our previews in-app, so if they are encountering an issue on their side, we will most likely encounter the same problem."
     }
   },
   "COS Platform": {
