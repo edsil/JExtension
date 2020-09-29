@@ -178,5 +178,37 @@
       "steps":"PHP version: Check what the most up to date version is - please ensure they are using the most up to date version\nWordPress version: Check what the most up to date version is here - please ensure they are using the most up to date version\nList of plugins (with versions) that the customer has on their browser: A screenshot of the plugins page is OK\nA recording illustrating the issue:\n",
       "notes":"We might ask you to provide us with the browser's console logs and browser's network logs."
     }
+  },
+  "CRM Email": {
+    "Troubleshooting why a BCC email did not log to the CRM":{
+      "resources":{
+        "Troubleshooting Connected Email: Email logging":"https://wiki.hubspotcentral.net/display/Support/Troubleshooting+Connected+Email%3A+Email+logging"
+      },
+      "steps":"HID:\nUser email:\nLink to Support Toolbox Dashboard for the user(s)\nContact record emails should be logged to:\nContact email address:\nDoes the email meet the requirements for it to log?\nIssue/Context:\nCan they reproduce the issue?\nEmail headers included as a separate attachment\n"
+    },
+    "Troubleshooting why a reply did not log to the CRM":{
+      "resources":{
+        "Troubleshooting Connected Email: Email logging":"https://wiki.hubspotcentral.net/display/Support/Troubleshooting+Connected+Email%3A+Email+logging",
+        "Engagement API of the email already logged on the timeline":"https://tools.hubteam.com/api/request/ed210fe5c79a410f9319039296e28ac5",
+        "Have we ever synced a reply from the inbox that received the email?":"https://tools.hubteam.com/support-toolbox/events?offset=0&ownerEmail=bkirschner%40hubspot.com&pageSize=50&sendSource=FACSIMILE&to=bkirschner%40hubspot.com"
+
+      },
+      "steps":"HID:\nUser email:\nLink to Support Toolbox Dashboard for the user(s):\nContact record emails should be logged to:\nContact email address:\nMessage ID of the email already logged on the timeline (see requirement 2):\nEngagement API of the email already logged on the timeline: (link in resources)\nDoes the email meet the requirements for it to log?:\nCan they reproduce the issue?\nHave we ever synced a reply from the inbox that received the email?: (link in resources)\nDid the user switch from using a shared inbox to a personal inbox in the same thread?: If the answer is no, and their inbox is connected, ignore this template and use: [How-to] IMAP Replies not logging to CRM\nIssue/Context:\nEmail headers included as a separate attachment\n"
+    },
+    "Troubleshooting why a forwarded email did not log to the CRM":{
+      "resources":{
+        "Troubleshooting Connected Email: Email logging":"https://wiki.hubspotcentral.net/display/Support/Troubleshooting+Connected+Email%3A+Email+logging",
+        "Example of toolbox URL of users experiencing issue":"https://tools.hubteam.com/support-toolbox?user=bkhubspot@mail.com"
+      },
+      "steps":"HID:\nUser email:\nSupport toolbox URL of user(s) experiencing issue (example in resources)\nContact record emails should be logged to:\nContact email address:\nDoes the email meet the requirements for it to log?\nIssue/Context:\nCan they reproduce the issue?\nEmail headers included as a separate attachment\n"
+    },
+    "Trouble Connecting Inbox via IMAP":{
+      "resources":{
+        "Troubleshooting IMAP inbox connections":"https://wiki.hubspotcentral.net/display/Support/Troubleshooting+IMAP+inbox+connections",
+        "Example of toolbox URL of users experiencing issue":"https://tools.hubteam.com/support-toolbox?user=bkhubspot@mail.com",
+        "Set up IMAP settings for your email domain":"https://knowledge.hubspot.com/email-notifications/set-up-imap-settings-for-your-email-domain"
+      },
+      "steps":"Support toolbox URL of user(s) experiencing issue (example in resources) - Even if the issue impacts all users in the account, providing at least one user gives us an example to review\nIs this impacting this one user, or the entire team? If only one user is impacted, is the user using the exact settings as their teammates who are connected?\nWhat email service or software are they using to host their email? - Be specific, specifying the version if applicable. Remember an email client is not the same thing as an email service or software. Email clients are used to access inboxes on an email server. The email server provide the syncing and sending functionality for an inbox.\nDo they use a firewall / have security rules in place? Make sure they have followed the \"Set up IMAP settings for your email domain\" instructions (see resources) to configure and whitelist static IPs before filing the JIRA.\nAny additional information: The more information you can provide in the JIRA the better. Some types of information that is helpful would be:\n - What troubleshooting steps have you tried so far?\n - Do they have internal IT or are they working with a 3rd party email provider?\n - Any additional information about the circumstance that you or the user are aware of?\nError audit\nHAR file if applicable - only required if you cannot see the connected inbox in Support Toolbox after they tried to connect.\n"
+    }
   }
 }
