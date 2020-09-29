@@ -210,5 +210,36 @@
       },
       "steps":"Support toolbox URL of user(s) experiencing issue (example in resources) - Even if the issue impacts all users in the account, providing at least one user gives us an example to review\nIs this impacting this one user, or the entire team? If only one user is impacted, is the user using the exact settings as their teammates who are connected?\nWhat email service or software are they using to host their email? - Be specific, specifying the version if applicable. Remember an email client is not the same thing as an email service or software. Email clients are used to access inboxes on an email server. The email server provide the syncing and sending functionality for an inbox.\nDo they use a firewall / have security rules in place? Make sure they have followed the \"Set up IMAP settings for your email domain\" instructions (see resources) to configure and whitelist static IPs before filing the JIRA.\nAny additional information: The more information you can provide in the JIRA the better. Some types of information that is helpful would be:\n - What troubleshooting steps have you tried so far?\n - Do they have internal IT or are they working with a 3rd party email provider?\n - Any additional information about the circumstance that you or the user are aware of?\nError audit\nHAR file if applicable - only required if you cannot see the connected inbox in Support Toolbox after they tried to connect.\n"
     }
+  },
+  "Meetings":{
+    "Trouble with Meetings Links":{
+      "resources":{
+        "Supporting Meetings#ReportingIssues":"https://wiki.hubspotcentral.net/display/Support/Supporting+Meetings#SupportingMeetings-ReportingIssues"
+      },
+      "steps":"User's email address:\nSupport toolbox link:\nMeetings link URL:\nLink to contact who booked meeting:\n"
+    }
+  },
+  "Notifications Platform":{
+    "Unexpected Notifications Behavior":{
+      "resources":{
+        "User’s preferences endpoint":"https://tools.hubteam.com/api/get/api.hubapi.com%2Fnotification-station%2Fuser-preferences%2Fv1%2Fpreferences%2Fuser%3FhubId%3D((portalId))%26userId%3D((userId))?label=Get%20User%20notification%20preferences&portalId=&userId=",
+        "Reporting Tool":"https://tools.hubteam.com/notification-reporting-tool"
+      },
+      "steps":"Check user’s preferences using the endpoint in the resources:\nCheck reporting tool - If the notification is in there, file the JIRA under the NP JIRA Project. If it is not, file the JIRA in the product area the notification originates from (e.g. CRM for assignment notifications, FORMS for form submission etc) and mention that the notification was not sent to the notifications platform\nUser experiencing issue:\nLink to reporting tool: you can also link directly to the notification in question by copying the NotificationID from the list view and filtering by that ID\nA Specific example: this can include something the user should have been notified of but weren’t - OR - should not have been notified of but were\nEmail headers/full screenshot of notification (if applicable): Only needed in the case of the user receiving a notification they shouldn’t have\n"
+    }
+  },
+  "Reporting and Analytics":{
+    "Can we report on this?":{
+      "resources":{
+        "Troubleshooting Reports in HubSpot":"https://wiki.hubspotcentral.net/pages/viewpage.action?pageId=165742243"
+      },
+      "steps":"Include an outline of the user's goal:\nRoadblocks the user is facing building this report:\nLink to dashboard (if applicable):  Include link to the dashboard where the issue is located\nDashboard filters (if applicable): Specify what filters are being applied to the dashboard or report, for example the date range\nLink to report (if applicable): Include link to the report, please remember that if a report is not saved the link will take us to a blank report editor\n\nNote: If the issue is user specific, please provide info on the user and their user permissions.\n"
+    },
+    "Report shows unexpected data":{
+      "resources":{
+        "Troubleshooting Reports in HubSpot":"https://wiki.hubspotcentral.net/pages/viewpage.action?pageId=165742243"
+      },
+      "steps":"Outline what the user expected to see vs what they are seeing\nLink to dashboard (if applicable): Include link to the dashboard where the issue is located\nDashboard filters: Specify what filters are being applied to the dashboard or report, for example the date range\nLink to report: Include link to the report, please remember that if a report is not saved the link will take us to a blank report editor\nLink to the data expected to show in the report: If the report is on an object visible in the CRM (for example contacts, companies, deals) you can navigate to that object's dashboard and apply the same filters to the view that are used in the report. See if the results there match those seen in the report.\n - Example scenario: You could write in your JIRA something like, \"This report only shows 2 meetings for the user, but here's a contact (provide link) with a meeting from that user that is not included on the report\"\n - This is much more actionable then saying something like, \"This report isn't showing any meetings but the user said they had a meeting\"\nNote: If the issue is user specific, please provide info on the user and their user permissions.\n"
+    }
   }
 }
