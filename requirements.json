@@ -274,7 +274,7 @@
         "Sales Extensions Breakdown":"https://wiki.hubspotcentral.net/display/Support/Sales+Extensions+Breakdown",
         "Debug Logs":"https://knowledge.hubspot.com/articles/kcs_article/email-tracking/how-do-i-access-my-outlook-debug-logs-for-troubleshooting-the-hubspot-sales-extension-for-outlook"
       },
-      "steps":"User email:\nSupport Toolbox/FCC link:\nTray App version: Start menu search \"Add/remove programs\" > locate Sidekick for Windows in list > number under \"Version\" and go to the TrayApp_Logs folder\nDebug logs: using the \"How do I access my debug logs from my PC's Start Menu?\" method, use this filepath: C:\Users\%username%\AppData\Roaming\Sidekick\\n"
+      "steps":""
     }
   }
 }
