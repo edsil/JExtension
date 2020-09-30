@@ -241,5 +241,40 @@
       },
       "steps":"Outline what the user expected to see vs what they are seeing\nLink to dashboard (if applicable): Include link to the dashboard where the issue is located\nDashboard filters: Specify what filters are being applied to the dashboard or report, for example the date range\nLink to report: Include link to the report, please remember that if a report is not saved the link will take us to a blank report editor\nLink to the data expected to show in the report: If the report is on an object visible in the CRM (for example contacts, companies, deals) you can navigate to that object's dashboard and apply the same filters to the view that are used in the report. See if the results there match those seen in the report.\n - Example scenario: You could write in your JIRA something like, \"This report only shows 2 meetings for the user, but here's a contact (provide link) with a meeting from that user that is not included on the report\"\n - This is much more actionable then saying something like, \"This report isn't showing any meetings but the user said they had a meeting\"\nNote: If the issue is user specific, please provide info on the user and their user permissions.\n"
     }
+  },
+  "Sales Extensions":{
+    "Chrome Extension":{
+      "resources":{
+        "Sales Extensions Breakdown":"https://wiki.hubspotcentral.net/display/Support/Sales+Extensions+Breakdown",
+        "Chrome Browser Version":"chrome://help",
+        "Extension Version":"chrome://extensions",
+        "Console Log":"https://wiki.hubspotcentral.net/pages/viewpage.action?pageId=113947185",
+        "Backgroung Page Logs":"https://wiki.hubspotcentral.net/display/PM/Chrome+Extension+-+Console+logs+from+the+Background+Page"
+      },
+      "steps":"User email:\nSupport Toolbox link:\nChrome browser version:\nExtension version:\nConsole log:\nBackground Page logs:\n - chrome://extensions\n - Turn on Developer Mode at the top right\n - Under HubSpot extension, click pages\background.html next to \"Inspect views\"\n - Reproduce issue\n - Right-click and save Console Log and HAR file\nPlease have the user send Debug Logs: click the circle sprocket icon in gmail > help & troubleshooting > more help > send debug logs\n"
+    },
+    "VSTO Plugin":{
+      "resources":{
+        "Sales Extensions Breakdown":"https://wiki.hubspotcentral.net/display/Support/Sales+Extensions+Breakdown",
+        "Debug Logs":"https://knowledge.hubspot.com/articles/kcs_article/email-tracking/how-do-i-access-my-outlook-debug-logs-for-troubleshooting-the-hubspot-sales-extension-for-outlook"
+      },
+      "steps":"Please add the user's client in brackets at the beginning of the subject/title of the jira: [VSTO plugin]\nUser email:\nSupport Toolbox/FCC link:\nOutlook Version: file > office account > about outlook\nPlugin Version: HubSpot sales > settings\nDebug logs:\n"
+    },
+    "O365 add-in":{
+      "resources":{
+        "Sales Extensions Breakdown":"https://wiki.hubspotcentral.net/display/Support/Sales+Extensions+Breakdown",
+        "Console Log":"https://wiki.hubspotcentral.net/pages/viewpage.action?pageId=113947185",
+        "HAR File":"https://community.hubspot.com/t5/Tips-Tricks-Best-Practice/Troubleshooting-Toolkit-Collecting-a-HAR-file/m-p/20103"
+      },
+      "steps":"Please add the user's client in brackets at the beginning of the subject/title of the jira: [O365 add-in]\nUser email:\nSupport Toolbox/FCC link:\nConnected inbox email:\nEmail client: Outlook for Mac, Outlook for PC, Outlook on Web\nEmail client version: if applicable\nConsole log : if reproducible on Outlook on the Web\nHAR file: if reproducible on Outlook on the Web\nSend debug logs: Done by composing a new email > open HubSpot Sales > Settings (at bottom of panel) > help & troubleshooting > need more help? > send debug logs\n",
+      "notes":"If your customer is using Outlook for Mac/PC, have the customer try to reproduce in Outlook on Web even if that's not their preferred way to send email."
+    },
+    "Tray App":{
+      "resources":{
+        "Sales Extensions Breakdown":"https://wiki.hubspotcentral.net/display/Support/Sales+Extensions+Breakdown",
+        "Debug Logs":"https://knowledge.hubspot.com/articles/kcs_article/email-tracking/how-do-i-access-my-outlook-debug-logs-for-troubleshooting-the-hubspot-sales-extension-for-outlook"
+      },
+      "steps":"User email:\nSupport Toolbox/FCC link:\nTray App version: Start menu search \"Add/remove programs\" > locate Sidekick for Windows in list > number under \"Version\" and go to the TrayApp_Logs folder\nDebug logs: using the \"How do I access my debug logs from my PC's Start Menu?\" method, use this filepath: C:\Users\%username%\AppData\Roaming\Sidekick\\n"
+    }
   }
 }
