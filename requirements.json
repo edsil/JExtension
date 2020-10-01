@@ -299,5 +299,32 @@
     "[TASK] Request to delete sequences (often needed so users can delete templates)":{
       "steps":"Hubfinder:\nUser requesting removal: (make sure it's an admin)\nScreenshot of an admin's email communication showing that they approve the request:\nLink to portal’s Sequence page: Please format as https://app.hubspot.com/sequences/[HUB-ID]\n"
     }
+  },
+  "Social Media":{
+    "Social Account Connection Issue":{
+      "resources":{
+        "How to connect Social accounts":"https://knowledge.hubspot.com/social/connect-your-social-media-accounts-to-hubspot",
+        "Troubleshooting Facebook connection":"https://knowledge.hubspot.com/social/can-t-connect-social-page-to-hubspot#can-t-connect-facebook-page-to-hubspot",
+        "Troubleshooting LinkedIn connection":"https://knowledge.hubspot.com/social/can-t-connect-social-page-to-hubspot#can-t-connect-linkedin-company-page-to-hubspot",
+        "Troubleshooting Instagram connection":"https://knowledge.hubspot.com/social/cant-connect-instagram-business-account-to-hubspot",
+        "'Why isn't the Facebook (or Instagram) page I’m trying to connect showing up?' section of the Social Tools troubleshooting wiki":"https://wiki.hubspotcentral.net/pages/viewpage.action?pageId=186096766#TroubleshootingtheSocialMediaTool-Whyisn%27ttheFacebook(orInstagram)pageI%E2%80%99mtryingtoconnectshowingup?"
+      },
+      "steps":"Name and type (i.e. Twitter, Facebook, LinkedIn, YouTube, Instagram) of account in question:\nName/email address of user who's attempting to connect:\nScreenshots confirming that the user has required access levels to the account:\n - Facebook: page admin or editor\n - Instagram: admin or editor of the associated Facebook business page\n - LinkedIn: page manager\n - Twitter: doesn't require specific access level, just needs to be able to sign into the account\nExplanation of the specific behavior that's preventing the connection:\nConfirmation that the customer has completed troubleshooting steps from the KB:\nIf an error message pops up in HubSpot, also include a HAR file collected while reproducing the error\n"
+    },
+    "Social Publishing Issue":{
+      "resources":{
+        "How to create/publish Social posts in HubSpot":"https://knowledge.hubspot.com/social/create-and-publish-social-posts"
+      },
+      "steps":"Direct link to example failed post in the HubSpot Social Publishing tool (if available):\nScreenshot or description of publishing error:\nScreenshot or description of backend error (found by clicking \"View social post API data\" in Support Plugin):\nDescription of troubleshooting steps/investigation done so far:\n"
+    },
+    "Social Preview Card/Featured Image Issue":{
+      "resources":{
+        "Troubleshooting featured images in HubSpot Social posts":"https://knowledge.hubspot.com/social/featured-image-not-displaying-correctly-in-social-preview",
+        "Facebook Sharing Debugger":"https://developers.facebook.com/tools/debug/sharing/",
+        "Twitter Card Validator":"https://cards-dev.twitter.com/validator",
+        "LinkedIn Post Inspector":"https://www.linkedin.com/post-inspector/"
+      },
+      "steps":"Direct link to example post in the HubSpot Social Publishing tool (if available):\nURL that's being linked to in the post:\nDescription of inaccurate aspect of the preview card (meta description, page title, featured image?):\nRelevant meta tags from the linked page's source code (og:description, og:title, or og:image):\nScreenshot or description of results from social network's crawler (Facebook Sharing Debugger, Twitter Card Validator, or LinkedIn Post Inspector):\nDescription of troubleshooting steps/investigation done so far:\n"
+    }
   }
 }
