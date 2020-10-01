@@ -276,5 +276,25 @@
       },
       "steps":"User email:\nSupport Toolbox/FCC link:\nTray App version: Start menu search \"Add/remove programs\" > locate Sidekick for Windows in list > number under \"Version\" and go to the TrayApp_Logs folder\nDebug logs: using the \"How do I access my debug logs from my PC's Start Menu?\" method, use this filepath: C:\\Users\\%username%\\AppData\\Roaming\\Sidekick\\"
     }
+  },
+  "Sequences":{
+    "Contact not unenrolled from sequence AND there is a REPLY/THREAD_REPLY event":{
+      "description":"File a SCONTENT JIRA",
+      "resources":{
+        "Troubleshooting Sequences: Contact replied but was not unenrolled":"https://wiki.hubspotcentral.net/display/Support/Troubleshooting+Sequences%3A+Contact+replied+but+was+not+unenrolled",
+        "Sequence enrollment endpoint":"https://tools.hubteam.com/api/get/api.hubapi.com%2Fsequences%2Fv1%2Fenrollment%2Femail%2F((email%20address))%3FportalId%3D((portal))?headers=Content-Type%3A%20application%2Fjson%0AAccept%3A%20application%2Fjson&label=Sequence-enrollment%20by%20contact&email%20address=&portal=",
+        "Support Toolbox/FCC Event Lookup":"https://tools.hubteam.com/support-toolbox/events"
+      },
+      "steps":"User email:\nSupport Toolbox/FCC Link:\nHubSpot User ID: Located within the support toolbox/FCC\nLink to Sequence:\nContact email:\nContact record link:\nSequence enrollment endpoint: (see resources) please populate with the portal ID and contact email address before copying and pasting the URL into the JIRA\nEnrollment ID: listed as “id” in the ^ enrollment endpoint\nThread ID: Article above explains how to locate this ID\nSupport Toolbox/FCC Event Lookup: (see resources) enter the ^ Thread ID and supply the link in the JIRA\n"
+    },
+    "Contact not unenrolled from sequence AND there is NO REPLY/THREAD_REPLY event":{
+      "description":"File a CRMMAIL JIRA\nPlease note: if the reply email from the contact is older than seven days, the information needed to troubleshoot no longer exists on the backend. You will need to provide a recent example.",
+      "resources":{
+        "Troubleshooting Sequences: Contact replied but was not unenrolled":"https://wiki.hubspotcentral.net/display/Support/Troubleshooting+Sequences%3A+Contact+replied+but+was+not+unenrolled",
+        "Sequence enrollment endpoint":"https://tools.hubteam.com/api/get/api.hubapi.com%2Fsequences%2Fv1%2Fenrollment%2Femail%2F((email%20address))%3FportalId%3D((portal))?headers=Content-Type%3A%20application%2Fjson%0AAccept%3A%20application%2Fjson&label=Sequence-enrollment%20by%20contact&email%20address=&portal=",
+        "Support Toolbox/FCC Event Lookup":"https://tools.hubteam.com/support-toolbox/events"
+      },
+      "steps":"User email:\nSupport Toolbox/FCC Link:\nHubSpot User ID: Located within the support toolbox/FCC\nLink to Sequence:\nContact email:\nContact record link:\nSequence enrollment endpoint: (see resources) please populate with the portal ID and contact email address before copying and pasting the URL into the JIRA\nEnrollment ID: listed as “id” in the ^ enrollment endpoint\nMessage ID: Article above explains how to locate this ID\nSupport Toolbox/FCC Event Lookup: (see resources) enter the ^ Thread ID and supply the link in the JIRA\nAttach Headers for the email reply"
+    }
   }
 }
