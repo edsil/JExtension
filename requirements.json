@@ -326,5 +326,15 @@
       },
       "steps":"Direct link to example post in the HubSpot Social Publishing tool (if available):\nURL that's being linked to in the post:\nDescription of inaccurate aspect of the preview card (meta description, page title, featured image?):\nRelevant meta tags from the linked page's source code (og:description, og:title, or og:image):\nScreenshot or description of results from social network's crawler (Facebook Sharing Debugger, Twitter Card Validator, or LinkedIn Post Inspector):\nDescription of troubleshooting steps/investigation done so far:\n"
     }
+  },
+  "Workflows":{
+    "Enrollment Issue":{
+      "resources":{
+        "Troubleshoot Workflow Enrollment - 'Classic' Contact Workflows":"https://wiki.hubspotcentral.net/display/Support/Troubleshoot+Workflow+Enrollment+-+Contact+Workflows",
+        "Troubleshoot Workflow Enrollment - 'Hybrid' Contact Workflows":"https://wiki.hubspotcentral.net/pages/viewpage.action?pageId=226727544",
+        "Troubleshoot Workflow Enrollment - Company/Deal/Ticket/Quote Workflows":"https://wiki.hubspotcentral.net/pages/viewpage.action?pageId=220858852"
+      },
+      "steps":"A link to the workflow where the issue is occurring\nLink to an example contact or object\nLink to AwesomeLogs or the revision history endpoint\nA link to the contact or object’s list membership history (endpoints found in troubleshooting resource)\nDescription of the observed behavior\nDescription of the expected behavior\n"
+    }
   }
 }
