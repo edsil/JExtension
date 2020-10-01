@@ -295,6 +295,9 @@
         "Support Toolbox/FCC Event Lookup":"https://tools.hubteam.com/support-toolbox/events"
       },
       "steps":"User email:\nSupport Toolbox/FCC Link:\nHubSpot User ID: Located within the support toolbox/FCC\nLink to Sequence:\nContact email:\nContact record link:\nSequence enrollment endpoint: (see resources) please populate with the portal ID and contact email address before copying and pasting the URL into the JIRA\nEnrollment ID: listed as “id” in the ^ enrollment endpoint\nMessage ID: Article above explains how to locate this ID\nSupport Toolbox/FCC Event Lookup: (see resources) enter the ^ Thread ID and supply the link in the JIRA\nAttach Headers for the email reply"
+    },
+    "[TASK] Request to delete sequences (often needed so users can delete templates)":{
+      "steps":"Hubfinder:\nUser requesting removal: (make sure it's an admin)\nScreenshot of an admin's email communication showing that they approve the request:\nLink to portal’s Sequence page: Please format as https://app.hubspot.com/sequences/[HUB-ID]\n"
     }
   }
 }
