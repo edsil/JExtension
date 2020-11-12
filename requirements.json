@@ -2,6 +2,10 @@
 	"Version": 0.6,
 	"Link": "https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension",
 	"Academy/Certifications": {
+		"You are using an old version of the Jira Helper Extension": {
+			"resources": {
+				"Intructions on how to remove the exisint version and load the latest one":"https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension"}
+		},
 		"The customer has completed all exercises, but they are still not passing": {
 			"resources": {
 				"How to troubleshoot the Learning Center using Amplitude?": "https://wiki.hubspotcentral.net/pages/viewpage.action?pageId=136579391"
