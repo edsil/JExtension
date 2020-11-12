@@ -1,0 +1,349 @@
+{
+	"Version": 0.6,
+	"Link": "https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension",
+	"Academy/Certifications": {
+		"The customer has completed all exercises, but they are still not passing": {
+			"resources": {
+				"How to troubleshoot the Learning Center using Amplitude?": "https://wiki.hubspotcentral.net/pages/viewpage.action?pageId=136579391"
+			},
+			"steps": "Link to Diagnostic Tool:  including email of the user and track name\nUser ID:  You can find this in the FCC tool\nLink to Amplitude:\nScreenshots where we can see the event:\nTrack name:\nConfirmation that the event has been completed more than 24 hrs ago:"
+		}
+	},
+	"Activity Feed": {
+		"General Activity Feed Issues": {
+			"steps": "User's email address:\nSupport toolbox link:\nScreenshoot of what the user is seeing in the Activity Feed:"
+		}
+	},
+	"Ads": {
+		"Lead Syncing Issues": {
+			"resources": {
+				"Troubleshooting LinkedIn lead syncing": "https://knowledge.hubspot.com/ads/manage-linkedin-ads-accounts-syncing-leads-to-hubspot",
+				"Troubleshooting Facebook lead syncing": "https://knowledge.hubspot.com/ads/manage-facebook-pages-syncing-leads-to-hubspot"
+			},
+			"steps": "Link to customer's Lead Syncing settings (confirmation that they have Lead Syncing turned on):\nIf customer is unable to turn on Lead Syncing, then include:\n-Screenshots confirming that the connected user has the required permission for the page\n-Screenshots confirming any other page setup requirements outlined in the KB\n-Confirmation that the customer has completed the troubleshooting steps outlined in the KB\nIf Lead Syncing is already turned on, but the customer isn't seeing/is missing leads, then include:\n-A link to the ad campaign in question\n-An exported CSV of leads from Facebook/LinkedIn"
+		},
+		"Contact Attribution Issues": {
+			"resources": {
+				"How Ads attribution reports work in HubSpot": "https://knowledge.hubspot.com/ads/ads-attribution-in-hubspot",
+				"Tracking template:": "https://knowledge.hubspot.com/articles/kcs_article/reports/how-does-tracking-work-in-the-ads-add-on"
+			},
+			"steps": "A link to the contact(s) in question:\nConfirmation that the URL the contact landed on after clicking an ad that contains our entire tracking template:\nDoes the contact have an Ads event on their timeline?\nHave you confirmed you're looking at the correct ad campaign and date range?\nHave you confirmed you're looking at the correct attribution report?"
+		},
+		"Ad Account Connection Issues": {
+			"resources": {
+				"How to connect LinkedIn Ads accounts": "https://knowledge.hubspot.com/ads/connect-your-linkedin-ads-account-to-hubspot",
+				"How to connect Facebook Ads accounts": "https://knowledge.hubspot.com/ads/connect-your-facebook-ads-account-to-hubspot",
+				"How to connect Google Ads accounts": "https://knowledge.hubspot.com/ads/connect-your-google-ads-account-to-hubspot"
+			},
+			"steps": "Name of ad account in question:\nName of user who's attempting to connect:\nScreenshots confirming that the user has the required permissions in their ad account:\nDescription of the specific behavior that's preventing them from connecting:\nIf an error message pops up in HubSpot, also include a HAR file collected while reproducing the error"
+		},
+		"[TASK] 'Sorry. There are too many ad accounts to show right now' error": {
+			"description": "This error will show for users who have access to a large amount of ad accounts - our system will eventually timeout and we won't be able to display all of them, but we can manually connect the ad account for the customer if you file a Task JIRA.",
+			"steps": "ID of account(s) user is attempting to connect:\nScreenshot of error:\nScreenshot confirming the user's admin permission for account(s) in question:"
+		}
+	},
+	"APIs": {
+		"All API-Related JIRAs": {
+			"resources": {
+				"How to Effectively File an API Jira": "https://wiki.hubspotcentral.net/display/Support/How+to+Effectively+File+an+API+Jira"
+			},
+			"steps": "The endpoint they're using:\n - This includes the request method, the endpoint URL, and any query parameters. For example:\n   GET https://api.hubapi.com/contacts/v1/lists/all/contacts/all?count=100&offset=123456\nOutline the customer’s goals using that API*\n - Ideally, this will be relatively detailed (e.g. what objects they have in their external system that they want to emulate, why they’re storing data in a certain way). It is possible that the best solution is a completely different API and we won’t be able to identify those opportunities without this context.\nThe raw request being made to the HubSpot API:\n - This includes the request headers, and the full request body (if any). For example:\n   Headers: “Content-Type: application/json” Body: “{“vids”:[12345],“list_id”:“12345”}“\nThe error they received from HubSpot (if any):\n - Wherever possible, include the full error message received from HubSpot. This includes both the status code and full error body. For example:\n   Status code: 400 Response: {“status”:“error”,“message”:“Invalid input JSON on line 1, column 15”,“correlationId”:“xxx”,“requestId”:“xxx”}\n\n\nUnless we've already taken a look at the above info and explicitly ask, we do NOT want the following:\nThe code they wrote to make the request.\n - This is rarely helpful, and often confusing (e.g. none of us know PHP). Most of the HubSpot APIs accept JSON; this is a well documented, universal data format that we can evaluate for errors. Check out an example of a less-than-helpful code inclusion here.\nThe error logs from their own software/server/etc.\n - The logic here is essentially the same as the above; we're not familiar with every single programming language / hosting solution / server software in the world, and can't always deduce what's going on from someone's server logs. Check out an example of a less-than-helpful error log inclusion here.\nHapikeys/OAuth tokens/client secrets/etc.\n - This is a big one; we should  avoid  including any sensitive authentication information in jira wherever possible. It's even more important that your customer(s) avoid posting their authentication details anywhere public, especially the HubSpot Developer Forum."
+		}
+	},
+	"Calling": {
+		"[TASK] Phone Number Registration": {
+			"description": "Use for all tickets created via the Register Number Help Form.",
+			"resources": {
+				"Register Number Help Form": "https://wiki.hubspotcentral.net/pages/viewpage.action?pageId=245031085#WhatareRegisterPhoneNumberTickets?-FilingaTaskJIRA",
+				"Troubleshooting Calling: Phone Number Registration": "https://wiki.hubspotcentral.net/display/Support/Troubleshooting+Calling%3A+Phone+Number+Registration"
+			},
+			"steps": "Portal ID:\nUser's Support Toolbox:\nHS User ID: Available in Support Toolbox User section for each user\nPhone number: Include country code. (If coming from an auto created ticket, simply copy paste the ticket contents)\n",
+			"notes": " If the user needs another number registered after the JIRA is closed...\nTo ensure all registration requests are completed as quickly as possible, best practice is to open a new JIRA for every new registration ticket. That way if the PE who triaged that original one is unavailable it can be quickly picked up as a new task without delay."
+		},
+		"Call Issues": {
+			"resources": {
+				"Troubleshooting Calling: Call Quality Issues": "https://wiki.hubspotcentral.net/display/Support/Troubleshooting+Calling%3A+Call+Quality+Issues"
+			},
+			"steps": "HubId:\nUser email:\nTwilio subaccount ID: Available in Support Toolbox Calling section\nDescription of the issue:\nIs the issue with Call from browser, Call from phone, or both?\nPhone number:\nPhone device type: Mobile, desk, soft phone, etc.\nPhone carrier: AT&T, Grasshopper, Orange, etc.\nSpeed test results screenshot:\nDoes the issue persist in an incognito window?\nDoes the issue persist in other browsers?\nTwilio test results screenshot: Only Voice tests, not Video.\nLinks to contacts and example call(s) (please provide date and time of call): Must start with at least 1 call and be willing to provide more if necessary\nConsole log file from example call:\nHAR file from example call:\nConsent to voice trace?\n"
+		},
+		"Recording Issues": {
+			"resources": {
+				"Troubleshooting Calling: Recordings": "https://wiki.hubspotcentral.net/display/Support/Troubleshooting+Calling%3A+Recordings"
+			},
+			"steps": "If after working through all of the Troubleshooting Requirements in the article above, it appears there is a bug with the call engagement or recording logs, you can file a JIRA according to the details in troubleshooting guide above. There are no formal templates for these JIRAs as they are not regular Task or Help JIRAs, but would be indicative of a Bug in the product."
+		}
+	},
+	"Conversations": {
+		"Live Chat": {
+			"resources": {
+				"Supporting Conversations": "https://wiki.hubspotcentral.net/display/Support/Supporting+Conversations"
+			},
+			"steps": "Portal ID:\nUser's email address:\nThread Id URL: When viewing relevant conversation, this can be located within the URL, i.e. app.hubspot.com/live-messages/portalId/inbox/threadId\nEvent Id from error message: If there is a red error at the top of the screen when trying to complete a message, it will contain an Event Id. Copy & paste this.\nLink to targeted message: You may have to ask the user and verify. A good place to start is the URL the chat started on and the welcome message, so you can compare those to the settings of enabled messages in that portal.\n"
+		},
+		"Email": {
+			"resources": {
+				"Supporting Conversations": "https://wiki.hubspotcentral.net/display/Support/Supporting+Conversations",
+				"Support Toolbox": "https://tools.hubteam.com/support-toolbox/inboxes",
+				"Trace an email with its full headers": "https://support.google.com/mail/answer/29436?hl=en&visit_id=637364568832154658-2542559125&rd=1"
+			},
+			"steps": "Portal ID:\nUser's email address:\nThread Id URL: When viewing relevant conversation, this can be located within the URL, i.e. app.hubspot.com/live-messages/portalId/inbox/ threadId\nEvent Id from error message: If there is a red error at the top of the screen when trying to complete a message, it will contain an Event Id. Copy & paste this.\nLink to email channel settings: Check the email address the conversation was sent TO and compare it with channel settings\nLink to Support Toolbox for email: Search for the email in the Support Toolbox, find the relevant one (Shared checkmark present, correct portal), click the HS USER value to go to the relevant user dashboard\nMessage ID & headers from email client: Just like you do for Sales email issues. Be sure to grab headers from the email in the inbox of original recipient. The article \"Trace an email with its full headers\" walks through details for Gmail and other clients.\n"
+		},
+		"Chatflows (Bots)": {
+			"resources": {
+				"Supporting Conversations": "https://wiki.hubspotcentral.net/display/Support/Supporting+Conversations"
+			},
+			"steps": "Portal ID:\nUser's email address:\nThread Id URL: When viewing relevant conversation, this can be located within the URL, i.e. app.hubspot.com/live-messages/portalId/inbox/ threadId\nEvent Id from error message: If there is a red error at the top of the screen when trying to complete a message, it will contain an Event Id. Copy & paste this.\nBot Id: Link to the Bot editor for the bot in question, i.e. app.hubspot.com/bots/portalId/bot/botId\nContact record of visitor: if available Linked in right hand side bar of conversation\n"
+		}
+	},
+	"COS Email": {
+		"Marketing email not rendering as expected": {
+			"resources": {
+				"Marketing emails look different in Outlook": "https://knowledge.hubspot.com/articles/kcs_article/email/why-do-emails-look-different-in-outlook",
+				"Why are margins and padding around my image not rendering in Outlook?": "https://knowledge.hubspot.com/articles/KCS_Article/Email/Why-are-margins-and-padding-around-my-image-not-rendering-in-Outlook",
+				"Adjust the line spacing in an email": "https://knowledge.hubspot.com/articles/kcs_article/email/how-do-i-adjust-the-line-spacing-in-an-email",
+				"Optimize your email for mobile devices": "https://knowledge.hubspot.com/articles/kcs_article/email/how-can-i-optimize-my-email-for-mobile-devices",
+				"Common email design questions and best practices": "https://knowledge.hubspot.com/email-user-guide-v2/common-email-design-questions-and-best-practices",
+				"General email design tips": "https://knowledge.hubspot.com/articles/KCS_Article/Email/HubSpot-Email-Tool-Best-Practices",
+				"See what is CSS supported on various email clients": "https://www.campaignmonitor.com/css/link-element/link-in-head/"
+			},
+			"steps": "Explanation of how the customer is expecting the email to look (screenshots can be gold here!):\nA link to the email in the email editor:\nIf the email was created in Classic email editor, a link to the email template:\nWhat Browser(s) is the customer seeing this issue on: i.e Chrome, Safari, etc.\nWhat Operating system and version is the customer using: i.e. Windows 7 64-bit, macOS High Sierra 10.13.3, etc.\nIf the user is experiencing this on Desktop or Webmail, what specific email clients are they seeing this on: i.e. Outlook 2016, Outlook for Mac, Outlook.com, etc.\nIf you are referring to a mobile device, there are several mobile versions for email clients, include the relevant versions: i.e Gmail Android app, Gmail Android app IMAP, etc.\n",
+			"notes": "Please note that if you have an issue with certain clients not rendering on the <a href=\"https://knowledge.hubspot.com/articles/kcs_article/email/create-and-send-marketing-emails\"\\target=\"_blank\"> Email Client feature</a>, check the <a href=\"https://status.litmus.com/\"\\target=\"_blank\"> status page for Litmus</a> to see if they are encountering an issue. We use Litmus to generate our previews in-app, so if they are encountering an issue on their side, we will most likely encounter the same problem."
+		}
+	},
+	"COS Platform": {
+		"Generic Content Issue": {
+			"steps": "Expected behavior:\nCurrent behavior:\nIn-app HubSpot link to content in question:\nLive example link:\nLink in your test portal or the customer portal to your cloned version for testing:\n"
+		}
+	},
+	"COSCTA": {
+		"Generic Content Issue": {
+			"steps": "Expected behavior:\nCurrent behavior:\nIn-app HubSpot link to content in question:\nLive example link:\nLink in your test portal or the customer portal to your cloned version for testing:\n"
+		}
+	},
+	"CRM": {
+		"Issues Loading CRM Record(s)": {
+			"resources": {
+				"Speed Test": "https://www.speedtest.net/"
+			},
+			"steps": "Are you able to reproduce this issue?\nIs this issue occurring consistently for your customer, or does it only occur sporadically?\nDoes this issue crop up for the customer in only a single browser, or Is the customer able to reproduce this issue across multiple browsers? Which browser is the customer using when they see this issue occur?\nWhat version of the browser is the customer running? Is this the most up-to-date version?\nDoes the customer see this issue if the access the tool in an incognito browser window? Does it occur after they’ve cleared their browser cache?\nDoes the customer have any extensions running on their browser? If so, does the issue continue to occur after they’ve disabled those extensions?\nWhat is the operating system of the device where this issue is occurring? What is that operating system’s version?\nDoes this issue occur only on the customer’s computer or device? Are they able to reproduce this issue if they log into their portal on one of their colleague’s computers? Conversely, if a colleague logs into their portal on the customer’s computer, are they able to replicate the loading issue that the customer is seeing? If it’s only occurring on their computer, what’s the hardware installed on their device?\nAre the customer’s internet speeds up to par? This can be assessed by running a speed test.\n"
+		},
+		"[TASK] Request to Force Delete List(s)": {
+			"steps": "Screenshot showing the customer's request to delete the lists:\nConfirmation that the lists are not being used in other areas of the portal:\nInclude the exact List IDs of the lists they want deleted: You can locate the list ID within the URL, for example: https://app.hubspot.com/contacts/XXXXXXX/lists/48 would have a List ID of 48.\n",
+			"notes": "We cannot delete blog subscription lists that are linked to published, active blogs without adversely affecting that blog's subscription settings. As such, if the customer wants to delete the subscription lists associated with their blogs, they would need to delete the blog in its entirety, which should automatically delete the associated subscription lists as well."
+		},
+		"[TASK] Restore Deleted List": {
+			"resources": {
+				"Information required to request a deleted list to be restored": "https://wiki.hubspotcentral.net/display/Support/CRM+%5BTASK%5D+Restore+Deleted+List"
+			},
+			"steps": "List Name:\nList ID (staticListId):\nLink to list search endpoint:\n",
+			"notes": "We can currently only restore “Active” lists. “Static” lists cannot be restored so please do not file a Jira for them."
+		}
+	},
+	"Design Support": {
+		"Generic Content Issue": {
+			"steps": "Expected behavior:\nCurrent behavior:\nIn-app HubSpot link to content in question:\nLive example link:\nLink in your test portal or the customer portal to your cloned version for testing:\n"
+		}
+	},
+	"Email Deliverability": {
+		"[TASK] Unbounce unknown users": {
+			"resources": {
+				"Email Support FAQ": "https://wiki.hubspotcentral.net/display/Support/Email+Support+FAQ"
+			},
+			"steps": "Portal ID:\nReason for unbounce:\nSteps customer has taken to resolve bounce reason:\nLink to a list in the portal including the contacts to unbounce:\nAttach (if the contacts to unbounce are not internal contacts): Screenshots or supporting files that the contacts to unbounce currently exist and want to receive email\n"
+		},
+		"[TASK] Unquarantine OR Unsuspend": {
+			"resources": {
+				"Deliverability Alerts - What to Look for and What to Do": "https://wiki.hubspotcentral.net/display/emaildeliverability/Deliverability+Alerts+-+What+to+look+for%2C+and+what+to+do",
+				"Email Suspension Appeals Troubleshooting Guide (Suspension Appeals only)": "https://wiki.hubspotcentral.net/display/emaildeliverability/Email+Suspension+Appeals+Troubleshooting+Guide",
+				"Supporting Starter, Trial and Free Marketing Email Suspensions": "https://wiki.hubspotcentral.net/display/emaildeliverability/Supporting+Starter%2C+Trial+and+Free+Marketing+Email+Suspensions"
+			},
+			"steps": "Portal ID:\nLink to original quarantined list(s) (Not applicable for suspensions):\nDo they have Consent/opt-in from contacts?\nHas the customer explained how these contacts were opted in? (Y or N)\nIf so please choose the option that best describes the customer's explanation of opt-in:\n - These contacts have opted in to hear from their organization (Customer claims this is true, and you believe them)\n - These contacts have opted in to hear from their organization (Proof in the portal, ie. form submissions)\n - Contacts are customers and therefore have implied consent\n - Contacts are partners and therefore have implied consent\n - Contacts are free users and therefore have implied consent\n - Another organization provided this list and assured it had \"opt-in\"\nEstimated number of contacts removed:\nExplain what type of contacts were removed:\nHow were the lists cleaned? (optional for data collection)\n - Validated contacts\n - Opted out contacts\n - Deleted contacts\n - Other (explain)\nLink to cleaned up list(s) to unquarantine (Not applicable for suspensions):\nAttach original results file from list cleaning tool if available.\n"
+		}
+	},
+	"Forms": {
+		"resources": {
+			"How to troubleshoot HubSpot Forms": "https://wiki.hubspotcentral.net/display/Support/How+to+troubleshoot+HubSpot+Forms"
+		},
+		"steps": "A link to the form within the editor:\nA link to a live page with the form: only needed if the issue is based on a form on a page\nAn example contact who has seen an issue: if the issue is based on a submission\nLinks to the form submissions endpoints: if the issue is submission based. This endpoint is explained in the above wiki under the 'How to analyze a form submission' section.\nInclude context with your JIRA description: If there is an issue, why is it an issue and what is expected? Please do not copy and paste information from slack or a support ticket, copy and pasted answers are often provided out of context and mean follow up questions can't be answered.\n"
+	},
+	"General Integrations": {
+		"[TASK] Delete Salesforce Properties": {
+			"steps": "A list of the internal values of the property(ies) the customer would like deleted\nIf the request is to delete all Salesforce properties, please specify if you want the ‘Salesforce Information’ property group(s) deleted\nCheck 1: Are these properties used by any contacts/companies/lists/workflows? If yes, please provide a screenshot of the customer confirming they are still OK with us removing the properties as it will impact these assets.\nCheck 2: Does the customer have the SF integration uninstalled? We can only delete Salesforce Properties if the customer has uninstalled the integration completely.\n"
+		},
+		"Other Salesforce Issues": {
+			"steps": "Link to Salesforce Settings:\nWhat you expected to happen:\nWhat is actually happening:\nIs there a vague error message when attempting to Integrate? Please collect a HAR file\nSF records did not sync over to HubSpot?\nProvide the Salesforce IDs of some sample records. The IDs allow us to query the Salesforce API to see the full records and investigate further. The customer can find these IDs by navigating to the applicable records in Salesforce and copying the 15-18 character alphanumeric string at the end of the URL.\n"
+		},
+		"General Integrations": {
+			"steps": "Name of the Integration:\nLink to the Integration's Settings Page:\nDescription of what you expected to happen:\nDescription of what is actually happening:\nLink(s) to an example record showing the behavior:\nIs there a vague error message when attempting to Integrate? Please provide a HAR file:\n"
+		},
+		"Trouble with the WordPress plugin": {
+			"resources": {
+				"WordPress Plugin Support Troubleshooting": "https://wiki.hubspotcentral.net/display/PM/WordPress+Plugin+Support+Troubleshooting",
+				"PHP Most up to date Version": "https://www.php.net/supported-versions.php",
+				"Wordpress Most up to daate Version": "https://codex.wordpress.org/Supported_Versions",
+				"Browser Console Logs": "https://support.shortpoint.com/support/solutions/articles/1000222881-save-google-chrome-browser-s-console-file",
+				"Browser Network Logs": "https://confluence.atlassian.com/kb/generating-har-files-and-analyzing-web-requests-720420612.html"
+			},
+			"steps": "PHP version: Check what the most up to date version is - please ensure they are using the most up to date version\nWordPress version: Check what the most up to date version is here - please ensure they are using the most up to date version\nList of plugins (with versions) that the customer has on their browser: A screenshot of the plugins page is OK\nA recording illustrating the issue:\n",
+			"notes": "We might ask you to provide us with the browser's console logs and browser's network logs."
+		}
+	},
+	"CRM Email": {
+		"Troubleshooting why a BCC email did not log to the CRM": {
+			"resources": {
+				"Troubleshooting Connected Email: Email logging": "https://wiki.hubspotcentral.net/display/Support/Troubleshooting+Connected+Email%3A+Email+logging"
+			},
+			"steps": "HID:\nUser email:\nLink to Support Toolbox Dashboard for the user(s)\nContact record emails should be logged to:\nContact email address:\nDoes the email meet the requirements for it to log?\nIssue/Context:\nCan they reproduce the issue?\nEmail headers included as a separate attachment\n"
+		},
+		"Troubleshooting why a reply did not log to the CRM": {
+			"resources": {
+				"Troubleshooting Connected Email: Email logging": "https://wiki.hubspotcentral.net/display/Support/Troubleshooting+Connected+Email%3A+Email+logging",
+				"Engagement API of the email already logged on the timeline": "https://tools.hubteam.com/api/request/ed210fe5c79a410f9319039296e28ac5",
+				"Have we ever synced a reply from the inbox that received the email?": "https://tools.hubteam.com/support-toolbox/events?offset=0&ownerEmail=bkirschner%40hubspot.com&pageSize=50&sendSource=FACSIMILE&to=bkirschner%40hubspot.com"
+
+			},
+			"steps": "HID:\nUser email:\nLink to Support Toolbox Dashboard for the user(s):\nContact record emails should be logged to:\nContact email address:\nMessage ID of the email already logged on the timeline (see requirement 2):\nEngagement API of the email already logged on the timeline: (link in resources)\nDoes the email meet the requirements for it to log?:\nCan they reproduce the issue?\nHave we ever synced a reply from the inbox that received the email?: (link in resources)\nDid the user switch from using a shared inbox to a personal inbox in the same thread?: If the answer is no, and their inbox is connected, ignore this template and use: [How-to] IMAP Replies not logging to CRM\nIssue/Context:\nEmail headers included as a separate attachment\n"
+		},
+		"Troubleshooting why a forwarded email did not log to the CRM": {
+			"resources": {
+				"Troubleshooting Connected Email: Email logging": "https://wiki.hubspotcentral.net/display/Support/Troubleshooting+Connected+Email%3A+Email+logging",
+				"Example of toolbox URL of users experiencing issue": "https://tools.hubteam.com/support-toolbox?user=bkhubspot@mail.com"
+			},
+			"steps": "HID:\nUser email:\nSupport toolbox URL of user(s) experiencing issue (example in resources)\nContact record emails should be logged to:\nContact email address:\nDoes the email meet the requirements for it to log?\nIssue/Context:\nCan they reproduce the issue?\nEmail headers included as a separate attachment\n"
+		},
+		"Trouble Connecting Inbox via IMAP": {
+			"resources": {
+				"Troubleshooting IMAP inbox connections": "https://wiki.hubspotcentral.net/display/Support/Troubleshooting+IMAP+inbox+connections",
+				"Example of toolbox URL of users experiencing issue": "https://tools.hubteam.com/support-toolbox?user=bkhubspot@mail.com",
+				"Set up IMAP settings for your email domain": "https://knowledge.hubspot.com/email-notifications/set-up-imap-settings-for-your-email-domain"
+			},
+			"steps": "Support toolbox URL of user(s) experiencing issue (example in resources) - Even if the issue impacts all users in the account, providing at least one user gives us an example to review\nIs this impacting this one user, or the entire team? If only one user is impacted, is the user using the exact settings as their teammates who are connected?\nWhat email service or software are they using to host their email? - Be specific, specifying the version if applicable. Remember an email client is not the same thing as an email service or software. Email clients are used to access inboxes on an email server. The email server provide the syncing and sending functionality for an inbox.\nDo they use a firewall / have security rules in place? Make sure they have followed the \"Set up IMAP settings for your email domain\" instructions (see resources) to configure and whitelist static IPs before filing the JIRA.\nAny additional information: The more information you can provide in the JIRA the better. Some types of information that is helpful would be:\n - What troubleshooting steps have you tried so far?\n - Do they have internal IT or are they working with a 3rd party email provider?\n - Any additional information about the circumstance that you or the user are aware of?\nError audit\nHAR file if applicable - only required if you cannot see the connected inbox in Support Toolbox after they tried to connect.\n"
+		}
+	},
+	"Meetings": {
+		"Trouble with Meetings Links": {
+			"resources": {
+				"Supporting Meetings#ReportingIssues": "https://wiki.hubspotcentral.net/display/Support/Supporting+Meetings#SupportingMeetings-ReportingIssues"
+			},
+			"steps": "User's email address:\nSupport toolbox link:\nMeetings link URL:\nLink to contact who booked meeting:\n"
+		}
+	},
+	"Notifications Platform": {
+		"Unexpected Notifications Behavior": {
+			"resources": {
+				"User’s preferences endpoint": "https://tools.hubteam.com/api/get/api.hubapi.com%2Fnotification-station%2Fuser-preferences%2Fv1%2Fpreferences%2Fuser%3FhubId%3D((portalId))%26userId%3D((userId))?label=Get%20User%20notification%20preferences&portalId=&userId=",
+				"Reporting Tool": "https://tools.hubteam.com/notification-reporting-tool"
+			},
+			"steps": "Check user’s preferences using the endpoint in the resources:\nCheck reporting tool - If the notification is in there, file the JIRA under the NP JIRA Project. If it is not, file the JIRA in the product area the notification originates from (e.g. CRM for assignment notifications, FORMS for form submission etc) and mention that the notification was not sent to the notifications platform\nUser experiencing issue:\nLink to reporting tool: you can also link directly to the notification in question by copying the NotificationID from the list view and filtering by that ID\nA Specific example: this can include something the user should have been notified of but weren’t - OR - should not have been notified of but were\nEmail headers/full screenshot of notification (if applicable): Only needed in the case of the user receiving a notification they shouldn’t have\n"
+		}
+	},
+	"Reporting and Analytics": {
+		"Can we report on this?": {
+			"resources": {
+				"Troubleshooting Reports in HubSpot": "https://wiki.hubspotcentral.net/pages/viewpage.action?pageId=165742243"
+			},
+			"steps": "Include an outline of the user's goal:\nRoadblocks the user is facing building this report:\nLink to dashboard (if applicable):  Include link to the dashboard where the issue is located\nDashboard filters (if applicable): Specify what filters are being applied to the dashboard or report, for example the date range\nLink to report (if applicable): Include link to the report, please remember that if a report is not saved the link will take us to a blank report editor\n\nNote: If the issue is user specific, please provide info on the user and their user permissions.\n"
+		},
+		"Report shows unexpected data": {
+			"resources": {
+				"Troubleshooting Reports in HubSpot": "https://wiki.hubspotcentral.net/pages/viewpage.action?pageId=165742243"
+			},
+			"steps": "Outline what the user expected to see vs what they are seeing\nLink to dashboard (if applicable): Include link to the dashboard where the issue is located\nDashboard filters: Specify what filters are being applied to the dashboard or report, for example the date range\nLink to report: Include link to the report, please remember that if a report is not saved the link will take us to a blank report editor\nLink to the data expected to show in the report: If the report is on an object visible in the CRM (for example contacts, companies, deals) you can navigate to that object's dashboard and apply the same filters to the view that are used in the report. See if the results there match those seen in the report.\n - Example scenario: You could write in your JIRA something like, \"This report only shows 2 meetings for the user, but here's a contact (provide link) with a meeting from that user that is not included on the report\"\n - This is much more actionable then saying something like, \"This report isn't showing any meetings but the user said they had a meeting\"\nNote: If the issue is user specific, please provide info on the user and their user permissions.\n"
+		}
+	},
+	"Sales Extensions": {
+		"Chrome Extension": {
+			"resources": {
+				"Sales Extensions Breakdown": "https://wiki.hubspotcentral.net/display/Support/Sales+Extensions+Breakdown",
+				"Chrome Browser Version": "chrome://help",
+				"Extension Version": "chrome://extensions",
+				"Console Log": "https://wiki.hubspotcentral.net/pages/viewpage.action?pageId=113947185",
+				"Backgroung Page Logs": "https://wiki.hubspotcentral.net/display/PM/Chrome+Extension+-+Console+logs+from+the+Background+Page"
+			},
+			"steps": "User email:\nSupport Toolbox link:\nChrome browser version:\nExtension version:\nConsole log:\nBackground Page logs:\n - chrome://extensions\n - Turn on Developer Mode at the top right\n - Under HubSpot extension, click pages\background.html next to \"Inspect views\"\n - Reproduce issue\n - Right-click and save Console Log and HAR file\nPlease have the user send Debug Logs: click the circle sprocket icon in gmail > help & troubleshooting > more help > send debug logs\n"
+		},
+		"VSTO Plugin": {
+			"resources": {
+				"Sales Extensions Breakdown": "https://wiki.hubspotcentral.net/display/Support/Sales+Extensions+Breakdown",
+				"Debug Logs": "https://knowledge.hubspot.com/articles/kcs_article/email-tracking/how-do-i-access-my-outlook-debug-logs-for-troubleshooting-the-hubspot-sales-extension-for-outlook"
+			},
+			"steps": "Please add the user's client in brackets at the beginning of the subject/title of the jira: [VSTO plugin]\nUser email:\nSupport Toolbox/FCC link:\nOutlook Version: file > office account > about outlook\nPlugin Version: HubSpot sales > settings\nDebug logs:\n"
+		},
+		"O365 add-in": {
+			"resources": {
+				"Sales Extensions Breakdown": "https://wiki.hubspotcentral.net/display/Support/Sales+Extensions+Breakdown",
+				"Console Log": "https://wiki.hubspotcentral.net/pages/viewpage.action?pageId=113947185",
+				"HAR File": "https://community.hubspot.com/t5/Tips-Tricks-Best-Practice/Troubleshooting-Toolkit-Collecting-a-HAR-file/m-p/20103"
+			},
+			"steps": "Please add the user's client in brackets at the beginning of the subject/title of the jira: [O365 add-in]\nUser email:\nSupport Toolbox/FCC link:\nConnected inbox email:\nEmail client: Outlook for Mac, Outlook for PC, Outlook on Web\nEmail client version: if applicable\nConsole log : if reproducible on Outlook on the Web\nHAR file: if reproducible on Outlook on the Web\nSend debug logs: Done by composing a new email > open HubSpot Sales > Settings (at bottom of panel) > help & troubleshooting > need more help? > send debug logs\n",
+			"notes": "If your customer is using Outlook for Mac/PC, have the customer try to reproduce in Outlook on Web even if that's not their preferred way to send email."
+		},
+		"Tray App": {
+			"resources": {
+				"Sales Extensions Breakdown": "https://wiki.hubspotcentral.net/display/Support/Sales+Extensions+Breakdown",
+				"Debug Logs": "https://knowledge.hubspot.com/articles/kcs_article/email-tracking/how-do-i-access-my-outlook-debug-logs-for-troubleshooting-the-hubspot-sales-extension-for-outlook"
+			},
+			"steps": "User email:\nSupport Toolbox/FCC link:\nTray App version: Start menu search \"Add/remove programs\" > locate Sidekick for Windows in list > number under \"Version\" and go to the TrayApp_Logs folder\nDebug logs: using the \"How do I access my debug logs from my PC's Start Menu?\" method, use this filepath: C:\\Users\\%username%\\AppData\\Roaming\\Sidekick\\"
+		}
+	},
+	"Sequences": {
+		"Contact not unenrolled from sequence AND there is a REPLY/THREAD_REPLY event": {
+			"description": "File a SCONTENT JIRA",
+			"resources": {
+				"Troubleshooting Sequences: Contact replied but was not unenrolled": "https://wiki.hubspotcentral.net/display/Support/Troubleshooting+Sequences%3A+Contact+replied+but+was+not+unenrolled",
+				"Sequence enrollment endpoint": "https://tools.hubteam.com/api/get/api.hubapi.com%2Fsequences%2Fv1%2Fenrollment%2Femail%2F((email%20address))%3FportalId%3D((portal))?headers=Content-Type%3A%20application%2Fjson%0AAccept%3A%20application%2Fjson&label=Sequence-enrollment%20by%20contact&email%20address=&portal=",
+				"Support Toolbox/FCC Event Lookup": "https://tools.hubteam.com/support-toolbox/events"
+			},
+			"steps": "User email:\nSupport Toolbox/FCC Link:\nHubSpot User ID: Located within the support toolbox/FCC\nLink to Sequence:\nContact email:\nContact record link:\nSequence enrollment endpoint: (see resources) please populate with the portal ID and contact email address before copying and pasting the URL into the JIRA\nEnrollment ID: listed as “id” in the ^ enrollment endpoint\nThread ID: Article above explains how to locate this ID\nSupport Toolbox/FCC Event Lookup: (see resources) enter the ^ Thread ID and supply the link in the JIRA\n"
+		},
+		"Contact not unenrolled from sequence AND there is NO REPLY/THREAD_REPLY event": {
+			"description": "File a CRMMAIL JIRA<br>Please note: if the reply email from the contact is older than seven days, the information needed to troubleshoot no longer exists on the backend. You will need to provide a recent example.",
+			"resources": {
+				"Troubleshooting Sequences: Contact replied but was not unenrolled": "https://wiki.hubspotcentral.net/display/Support/Troubleshooting+Sequences%3A+Contact+replied+but+was+not+unenrolled",
+				"Sequence enrollment endpoint": "https://tools.hubteam.com/api/get/api.hubapi.com%2Fsequences%2Fv1%2Fenrollment%2Femail%2F((email%20address))%3FportalId%3D((portal))?headers=Content-Type%3A%20application%2Fjson%0AAccept%3A%20application%2Fjson&label=Sequence-enrollment%20by%20contact&email%20address=&portal=",
+				"Support Toolbox/FCC Event Lookup": "https://tools.hubteam.com/support-toolbox/events"
+			},
+			"steps": "User email:\nSupport Toolbox/FCC Link:\nHubSpot User ID: Located within the support toolbox/FCC\nLink to Sequence:\nContact email:\nContact record link:\nSequence enrollment endpoint: (see resources) please populate with the portal ID and contact email address before copying and pasting the URL into the JIRA\nEnrollment ID: listed as “id” in the ^ enrollment endpoint\nMessage ID: Article above explains how to locate this ID\nSupport Toolbox/FCC Event Lookup: (see resources) enter the ^ Thread ID and supply the link in the JIRA\nAttach Headers for the email reply"
+		},
+		"[TASK] Request to delete sequences (often needed so users can delete templates)": {
+			"steps": "Hubfinder:\nUser requesting removal: (make sure it's an admin)\nScreenshot of an admin's email communication showing that they approve the request:\nLink to portal’s Sequence page: Please format as https://app.hubspot.com/sequences/[HUB-ID]\n"
+		}
+	},
+	"Social Media": {
+		"Social Account Connection Issue": {
+			"resources": {
+				"How to connect Social accounts": "https://knowledge.hubspot.com/social/connect-your-social-media-accounts-to-hubspot",
+				"Troubleshooting Facebook connection": "https://knowledge.hubspot.com/social/can-t-connect-social-page-to-hubspot#can-t-connect-facebook-page-to-hubspot",
+				"Troubleshooting LinkedIn connection": "https://knowledge.hubspot.com/social/can-t-connect-social-page-to-hubspot#can-t-connect-linkedin-company-page-to-hubspot",
+				"Troubleshooting Instagram connection": "https://knowledge.hubspot.com/social/cant-connect-instagram-business-account-to-hubspot",
+				"'Why isn't the Facebook (or Instagram) page I’m trying to connect showing up?' section of the Social Tools troubleshooting wiki": "https://wiki.hubspotcentral.net/pages/viewpage.action?pageId=186096766#TroubleshootingtheSocialMediaTool-Whyisn%27ttheFacebook(orInstagram)pageI%E2%80%99mtryingtoconnectshowingup?"
+			},
+			"steps": "Name and type (i.e. Twitter, Facebook, LinkedIn, YouTube, Instagram) of account in question:\nName/email address of user who's attempting to connect:\nScreenshots confirming that the user has required access levels to the account:\n - Facebook: page admin or editor\n - Instagram: admin or editor of the associated Facebook business page\n - LinkedIn: page manager\n - Twitter: doesn't require specific access level, just needs to be able to sign into the account\nExplanation of the specific behavior that's preventing the connection:\nConfirmation that the customer has completed troubleshooting steps from the KB:\nIf an error message pops up in HubSpot, also include a HAR file collected while reproducing the error\n"
+		},
+		"Social Publishing Issue": {
+			"resources": {
+				"How to create/publish Social posts in HubSpot": "https://knowledge.hubspot.com/social/create-and-publish-social-posts"
+			},
+			"steps": "Direct link to example failed post in the HubSpot Social Publishing tool (if available):\nScreenshot or description of publishing error:\nScreenshot or description of backend error (found by clicking \"View social post API data\" in Support Plugin):\nDescription of troubleshooting steps/investigation done so far:\n"
+		},
+		"Social Preview Card/Featured Image Issue": {
+			"resources": {
+				"Troubleshooting featured images in HubSpot Social posts": "https://knowledge.hubspot.com/social/featured-image-not-displaying-correctly-in-social-preview",
+				"Facebook Sharing Debugger": "https://developers.facebook.com/tools/debug/sharing/",
+				"Twitter Card Validator": "https://cards-dev.twitter.com/validator",
+				"LinkedIn Post Inspector": "https://www.linkedin.com/post-inspector/"
+			},
+			"steps": "Direct link to example post in the HubSpot Social Publishing tool (if available):\nURL that's being linked to in the post:\nDescription of inaccurate aspect of the preview card (meta description, page title, featured image?):\nRelevant meta tags from the linked page's source code (og:description, og:title, or og:image):\nScreenshot or description of results from social network's crawler (Facebook Sharing Debugger, Twitter Card Validator, or LinkedIn Post Inspector):\nDescription of troubleshooting steps/investigation done so far:\n"
+		}
+	},
+	"Workflows": {
+		"Enrollment Issue": {
+			"resources": {
+				"Troubleshoot Workflow Enrollment - 'Classic' Contact Workflows": "https://wiki.hubspotcentral.net/display/Support/Troubleshoot+Workflow+Enrollment+-+Contact+Workflows",
+				"Troubleshoot Workflow Enrollment - 'Hybrid' Contact Workflows": "https://wiki.hubspotcentral.net/pages/viewpage.action?pageId=226727544",
+				"Troubleshoot Workflow Enrollment - Company/Deal/Ticket/Quote Workflows": "https://wiki.hubspotcentral.net/pages/viewpage.action?pageId=220858852"
+			},
+			"steps": "A link to the workflow where the issue is occurring\nLink to an example contact or object\nLink to AwesomeLogs or the revision history endpoint\nA link to the contact or object’s list membership history (endpoints found in troubleshooting resource)\nDescription of the observed behavior\nDescription of the expected behavior\n"
+		}
+	}
+}
