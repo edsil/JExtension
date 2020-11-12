@@ -14,6 +14,10 @@
 		}
 	},
 	"Activity Feed": {
+		"You are using an old version of the Jira Helper Extension": {
+			"resources": {
+				"Intructions on how to remove the exisint version and load the latest one":"https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension"}
+		},
 		"General Activity Feed Issues": {
 			"steps": "User's email address:\nSupport toolbox link:\nScreenshoot of what the user is seeing in the Activity Feed:"
 		}
@@ -47,6 +51,10 @@
 		}
 	},
 	"APIs": {
+		"You are using an old version of the Jira Helper Extension": {
+			"resources": {
+				"Intructions on how to remove the exisint version and load the latest one":"https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension"}
+		},
 		"All API-Related JIRAs": {
 			"resources": {
 				"How to Effectively File an API Jira": "https://wiki.hubspotcentral.net/display/Support/How+to+Effectively+File+an+API+Jira"
@@ -55,6 +63,10 @@
 		}
 	},
 	"Calling": {
+		"You are using an old version of the Jira Helper Extension": {
+			"resources": {
+				"Intructions on how to remove the exisint version and load the latest one":"https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension"}
+		},
 		"[TASK] Phone Number Registration": {
 			"description": "Use for all tickets created via the Register Number Help Form.",
 			"resources": {
@@ -78,6 +90,10 @@
 		}
 	},
 	"Conversations": {
+		"You are using an old version of the Jira Helper Extension": {
+			"resources": {
+				"Intructions on how to remove the exisint version and load the latest one":"https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension"}
+		},
 		"Live Chat": {
 			"resources": {
 				"Supporting Conversations": "https://wiki.hubspotcentral.net/display/Support/Supporting+Conversations"
@@ -100,6 +116,10 @@
 		}
 	},
 	"COS Email": {
+		"You are using an old version of the Jira Helper Extension": {
+			"resources": {
+				"Intructions on how to remove the exisint version and load the latest one":"https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension"}
+		},
 		"Marketing email not rendering as expected": {
 			"resources": {
 				"Marketing emails look different in Outlook": "https://knowledge.hubspot.com/articles/kcs_article/email/why-do-emails-look-different-in-outlook",
@@ -115,16 +135,28 @@
 		}
 	},
 	"COS Platform": {
+		"You are using an old version of the Jira Helper Extension": {
+			"resources": {
+				"Intructions on how to remove the exisint version and load the latest one":"https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension"}
+		},
 		"Generic Content Issue": {
 			"steps": "Expected behavior:\nCurrent behavior:\nIn-app HubSpot link to content in question:\nLive example link:\nLink in your test portal or the customer portal to your cloned version for testing:\n"
 		}
 	},
 	"COSCTA": {
+		"You are using an old version of the Jira Helper Extension": {
+			"resources": {
+				"Intructions on how to remove the exisint version and load the latest one":"https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension"}
+		},
 		"Generic Content Issue": {
 			"steps": "Expected behavior:\nCurrent behavior:\nIn-app HubSpot link to content in question:\nLive example link:\nLink in your test portal or the customer portal to your cloned version for testing:\n"
 		}
 	},
 	"CRM": {
+		"You are using an old version of the Jira Helper Extension": {
+			"resources": {
+				"Intructions on how to remove the exisint version and load the latest one":"https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension"}
+		},
 		"Issues Loading CRM Record(s)": {
 			"resources": {
 				"Speed Test": "https://www.speedtest.net/"
@@ -144,11 +176,19 @@
 		}
 	},
 	"Design Support": {
+		"You are using an old version of the Jira Helper Extension": {
+			"resources": {
+				"Intructions on how to remove the exisint version and load the latest one":"https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension"}
+		},
 		"Generic Content Issue": {
 			"steps": "Expected behavior:\nCurrent behavior:\nIn-app HubSpot link to content in question:\nLive example link:\nLink in your test portal or the customer portal to your cloned version for testing:\n"
 		}
 	},
 	"Email Deliverability": {
+		"You are using an old version of the Jira Helper Extension": {
+			"resources": {
+				"Intructions on how to remove the exisint version and load the latest one":"https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension"}
+		},
 		"[TASK] Unbounce unknown users": {
 			"resources": {
 				"Email Support FAQ": "https://wiki.hubspotcentral.net/display/Support/Email+Support+FAQ"
@@ -165,6 +205,10 @@
 		}
 	},
 	"Forms": {
+		"You are using an old version of the Jira Helper Extension": {
+			"resources": {
+				"Intructions on how to remove the exisint version and load the latest one":"https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension"}
+		},
 		"resources": {
 			"How to troubleshoot HubSpot Forms": "https://wiki.hubspotcentral.net/display/Support/How+to+troubleshoot+HubSpot+Forms"
 		},
@@ -193,6 +237,10 @@
 		}
 	},
 	"CRM Email": {
+		"You are using an old version of the Jira Helper Extension": {
+			"resources": {
+				"Intructions on how to remove the exisint version and load the latest one":"https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension"}
+		},
 		"Troubleshooting why a BCC email did not log to the CRM": {
 			"resources": {
 				"Troubleshooting Connected Email: Email logging": "https://wiki.hubspotcentral.net/display/Support/Troubleshooting+Connected+Email%3A+Email+logging"
@@ -225,6 +273,10 @@
 		}
 	},
 	"Meetings": {
+		"You are using an old version of the Jira Helper Extension": {
+			"resources": {
+				"Intructions on how to remove the exisint version and load the latest one":"https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension"}
+		},
 		"Trouble with Meetings Links": {
 			"resources": {
 				"Supporting Meetings#ReportingIssues": "https://wiki.hubspotcentral.net/display/Support/Supporting+Meetings#SupportingMeetings-ReportingIssues"
@@ -233,6 +285,10 @@
 		}
 	},
 	"Notifications Platform": {
+		"You are using an old version of the Jira Helper Extension": {
+			"resources": {
+				"Intructions on how to remove the exisint version and load the latest one":"https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension"}
+		},
 		"Unexpected Notifications Behavior": {
 			"resources": {
 				"User’s preferences endpoint": "https://tools.hubteam.com/api/get/api.hubapi.com%2Fnotification-station%2Fuser-preferences%2Fv1%2Fpreferences%2Fuser%3FhubId%3D((portalId))%26userId%3D((userId))?label=Get%20User%20notification%20preferences&portalId=&userId=",
@@ -242,6 +298,10 @@
 		}
 	},
 	"Reporting and Analytics": {
+		"You are using an old version of the Jira Helper Extension": {
+			"resources": {
+				"Intructions on how to remove the exisint version and load the latest one":"https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension"}
+		},
 		"Can we report on this?": {
 			"resources": {
 				"Troubleshooting Reports in HubSpot": "https://wiki.hubspotcentral.net/pages/viewpage.action?pageId=165742243"
@@ -256,6 +316,10 @@
 		}
 	},
 	"Sales Extensions": {
+		"You are using an old version of the Jira Helper Extension": {
+			"resources": {
+				"Intructions on how to remove the exisint version and load the latest one":"https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension"}
+		},
 		"Chrome Extension": {
 			"resources": {
 				"Sales Extensions Breakdown": "https://wiki.hubspotcentral.net/display/Support/Sales+Extensions+Breakdown",
@@ -291,6 +355,10 @@
 		}
 	},
 	"Sequences": {
+		"You are using an old version of the Jira Helper Extension": {
+			"resources": {
+				"Intructions on how to remove the exisint version and load the latest one":"https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension"}
+		},
 		"Contact not unenrolled from sequence AND there is a REPLY/THREAD_REPLY event": {
 			"description": "File a SCONTENT JIRA",
 			"resources": {
@@ -314,6 +382,10 @@
 		}
 	},
 	"Social Media": {
+		"You are using an old version of the Jira Helper Extension": {
+			"resources": {
+				"Intructions on how to remove the exisint version and load the latest one":"https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension"}
+		},
 		"Social Account Connection Issue": {
 			"resources": {
 				"How to connect Social accounts": "https://knowledge.hubspot.com/social/connect-your-social-media-accounts-to-hubspot",
@@ -341,6 +413,10 @@
 		}
 	},
 	"Workflows": {
+		"You are using an old version of the Jira Helper Extension": {
+			"resources": {
+				"Intructions on how to remove the exisint version and load the latest one":"https://wiki.hubspotcentral.net/display/Support/Jira+Helper+Chrome+Extension"}
+		},
 		"Enrollment Issue": {
 			"resources": {
 				"Troubleshoot Workflow Enrollment - 'Classic' Contact Workflows": "https://wiki.hubspotcentral.net/display/Support/Troubleshoot+Workflow+Enrollment+-+Contact+Workflows",
